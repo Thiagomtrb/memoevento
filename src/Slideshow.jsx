@@ -4,13 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Slideshow({ gallery }) {
   const [index, setIndex] = useState(0);
 
-  // Troca automática de slide
   useEffect(() => {
     if (!gallery || gallery.length === 0) return;
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % gallery.length);
-    }, 4000); // troca a cada 4s
-
+    }, 4000);
     return () => clearInterval(interval);
   }, [gallery]);
 
