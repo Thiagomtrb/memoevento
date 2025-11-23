@@ -369,6 +369,9 @@ export default function App() {
           )}
         </div>
       )}
+{currentPage === "slideshow" && (
+  <Slideshow gallery={gallery} />
+)}
 
       {/* ---------------------- MODAL UPLOAD ---------------------- */}
       <AnimatePresence>
