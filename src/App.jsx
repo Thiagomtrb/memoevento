@@ -263,7 +263,13 @@ export default function App() {
                 whileTap={{ scale: 0.98 }}
                 className="px-4 py-2 rounded-xl bg-neutral-900 text-white font-medium hover:bg-neutral-800 shadow-sm flex items-center gap-2"
               >
-                <UploadCloud size={18} />
+ <button
+  onClick={() => setCurrentPage("slideshow")}
+  className="mt-3 text-sm text-neutral-600 hover:text-neutral-900 underline"
+>
+  Modo Telão
+</button>
+             <UploadCloud size={18} />
                 Enviar mídia
               </motion.button>
             </div>
