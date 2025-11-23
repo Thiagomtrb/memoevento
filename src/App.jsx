@@ -9,6 +9,8 @@ import {
   ArrowLeft,
   ShieldCheck,
 } from "lucide-react";
+import Slideshow from "./Slideshow.jsx";
+
 
 // --- Mock de eventos (exemplo)
 const demoEvents = [
